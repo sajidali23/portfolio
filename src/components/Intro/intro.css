@@ -1,0 +1,88 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  border-radius: 100rem;
+  z-index: -1;
+  right: 0;
+  object-fit: cover;
+  height: 90vh;
+  top: 1rem;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introName {
+  color: purple;
+}
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+.btnImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 988px) {
+  .bg {
+    right: -2vw;
+  }
+}
+@media screen and (max-width: 724px) {
+  .bg {
+    right: -21vw;
+    transition: smooth;
+  }
+}
+@media screen and (max-width: 588px) {
+  .bg {
+    right: -37vw;
+    transition: smooth;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    right: -60vw;
+    transition: smooth;
+  }
+}
+@media screen and (max-width: 352px) {
+  .bg {
+    right: -106vw;
+  }
+}
+@media screen and (max-width: 332px) {
+  .bg {
+    right: -114vw;
+    transition: smooth;
+  }
+}
